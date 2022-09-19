@@ -1,0 +1,61 @@
+@font-face {
+    font-family: Portago;
+    src: url(./fontes/portago_itc.ttf);
+}
+
+#foto-da-pagina {
+    border-radius: 5px;
+    display: block;
+    margin: 0px auto;
+}
+
+h1 {
+    font-family: Portago ITC;
+}
+
+body {
+    background-color: black;
+    background-image: url(./imagens/Background.gif);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-attachment: fixed;
+}
+
+.titulo-da-pagina {
+    text-align: center;
+    color: wheat;
+    font-family: Portago;
+    font-size: 50px;
+    font-weight: 400;
+    
+}
+
+#meu-nome:hover {
+    background-color: white;
+    border-radius: 5px;
+    padding: 3px;
+    transition-property: all;
+    transition-duration: 1s;
+}
+
+.presentation {
+    color: white;
+    font-weight: bold;
+    font-size: 25px;
+    text-align: center;
+    font-family: fantasy;
+    -webkit-text-stroke: 1px;
+    -webkit-text-stroke-color: black;
+}
+
+#skills, ul {
+    font-size: 18px;
+    text-align: left;
+}
+
+.titulo-da-lista {
+    margin-left: 40px;
+}
+
+
+
