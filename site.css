@@ -5,9 +5,72 @@
     box-sizing: border-box;
 }
 
+@font-face {
+    font-family: Portago;
+    src: url(./fontes/Portago/portago_itc.ttf); 
+}
+
 .menu {
     height: 100vh;
     width: 100%;
-    background-image: url();
+    background-image: url(./imagens/Background.gif);
+    background-size: cover;
+    background-position: center;
 }
 
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 45px;
+    padding-left: 8%;
+    padding-right: 8%;
+}
+
+.logo {
+    color: wheat;
+    font-size: 50px;
+    font-weight: 550;
+    font-family: Portago;
+    letter-spacing: 0px;
+    cursor: pointer;
+}
+
+nav ul li {
+    list-style-type: none;
+    display: inline-block;
+    padding: 10px 25px;
+}
+
+nav ul li a {
+    color: wheat;
+    font-family: Portago;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 17px;
+    text-transform: capitalize;
+
+}
+
+nav ul li a:hover {
+    color: orange;
+    transition: .4s;
+}
+
+.botao {
+    background-color: red;
+    color: wheat;
+    font-size: 20px;
+    font-family: Portago;
+    text-decoration: none;
+    border: 2px solid transparent;
+    border-radius: 30px;
+    font-weight: bold;
+    text-shadow: 2px 2px black;
+    padding: 10px 25px;
+    transition: transform .4s;
+}
+
+.botao:hover {
+    transform: scale(0.8);
+}
