@@ -74,3 +74,94 @@ nav ul li a:hover {
 .botao:hover {
     transform: scale(0.8);
 }
+
+.conteudo {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    position: absolute;
+    top: 50%;
+    left: 8%;
+    transform: translateY(-50%);
+}
+
+h1 {
+    color: wheat;
+    text-shadow: 2px 2px black;
+    margin: 20px 0px 20px;
+    font-size: 75px;
+    font-weight: 500;
+    font-family: Portago;
+
+}
+
+h3 {
+    color: wheat;
+    font-size: 25px;
+    margin-bottom: 50px;
+    /* background-color: black;
+    text-decoration: none;
+    border: 7px solid transparent;
+    border-width: thin;
+    border-radius: 30px;
+    border-color: wheat;
+    padding: 8px 12px 8px 12px;
+    transition: transform .4s; */
+}
+
+h4 {
+    color: wheat;
+    letter-spacing: 0px;
+    font-size: 20px;
+}
+
+h5 {
+    color: wheat;
+    font-size: 18px;
+    border: 3px solid transparent;
+}
+
+#meu-nome {
+    text-shadow: 2px 2px black;
+    border: 2px solid transparent;
+    border-radius: 30px;
+    font-weight: bolder;
+}
+
+/* hover pra melhorar a visualização */
+
+h5:hover {
+    background-color: black;
+    text-decoration: none;
+    border: 7px solid transparent;
+    border-width: thin;
+    border-radius: 30px;
+    border-color: black;
+    padding: 8px 12px 8px 12px;
+    transition: .4s;
+
+}
+
+h4:hover {
+    background-color: black;
+    text-decoration: none;
+    border: 7px solid transparent;
+    border-width: thin;
+    border-radius: 30px;
+    border-color: black;
+    padding: 4px 6px 4px 6px;
+    transition: .4s
+}
+
+h3:hover {
+    background-color: black;
+    text-decoration: none;
+    border: 7px solid transparent;
+    border-width: thin;
+    border-radius: 30px;
+    border-color: black;
+    padding: 8px 12px 8px 12px;
+    transition: .4s;
+}
+
+
