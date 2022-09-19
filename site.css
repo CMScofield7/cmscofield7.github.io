@@ -10,10 +10,12 @@
     src: url(./fontes/Portago/portago_itc.ttf); 
 }
 
+/* menu + background do site */
+
 .menu {
     height: 100vh;
     width: 100%;
-    background-image: url(./imagens/Background.gif);
+    background-image: url(./imagens/photo_2022-07-13_00-10-09.jpg);
     background-size: cover;
     background-position: center;
 }
@@ -27,19 +29,19 @@ nav {
     padding-right: 8%;
 }
 
+
 .logo {
-    color: wheat;
-    font-size: 50px;
-    font-weight: 550;
-    font-family: Portago;
-    letter-spacing: 0px;
     cursor: pointer;
+    border-radius: 50%;
+    width: 160px;
+    height: 125px;
 }
 
 nav ul li {
     list-style-type: none;
     display: inline-block;
     padding: 10px 25px;
+    overflow: hidden;
 }
 
 nav ul li a {
@@ -56,6 +58,8 @@ nav ul li a:hover {
     color: orange;
     transition: .4s;
 }
+
+/* Botões de inscrição/follow */
 
 .botao {
     background-color: red;
@@ -85,7 +89,9 @@ nav ul li a:hover {
     transform: translateY(-50%);
 }
 
-h1 {
+/* Texto curto na capa da página */
+
+.conteudo h1 {
     color: wheat;
     text-shadow: 2px 2px black;
     margin: 20px 0px 20px;
@@ -95,19 +101,20 @@ h1 {
 
 }
 
-h3 {
+.conteudo h3 {
     color: wheat;
     font-size: 25px;
     margin-bottom: 50px;
 }
 
-h4 {
+.conteudo h4 {
     color: wheat;
     letter-spacing: 0px;
     font-size: 20px;
+    padding-top: 3px;
 }
 
-h5 {
+.conteudo h5 {
     color: wheat;
     font-size: 18px;
     border: 3px solid transparent;
@@ -122,7 +129,7 @@ h5 {
 
 /* hover pra melhorar a visualização */
 
-h5:hover {
+.conteudo h5:hover {
     background-color: black;
     text-decoration: none;
     border: 7px solid transparent;
@@ -134,7 +141,7 @@ h5:hover {
 
 }
 
-h4:hover {
+.conteudo h4:hover {
     background-color: black;
     text-decoration: none;
     border: 7px solid transparent;
@@ -145,7 +152,7 @@ h4:hover {
     transition: .4s
 }
 
-h3:hover {
+.conteudo h3:hover {
     background-color: black;
     text-decoration: none;
     border: 7px solid transparent;
@@ -156,4 +163,106 @@ h3:hover {
     transition: .4s;
 }
 
+/* box para noticias */
 
+.noticias form {
+    width: 380px;
+    max-width: 100%;
+    position: relative;
+}
+
+.noticias form input:nth-child(1) {
+    display: inline-block;
+    width: 100%;
+    background-color: black;
+    padding: 14px 130px 14px 15px;
+    border: 2px solid wheat;
+    border-radius: 30px;
+}
+
+.noticias form input:nth-child(1)::placeholder {
+    color: white;
+    font-weight: 600;
+}
+
+/* Tentar arrumar o botão abaixo com mais tempo */
+
+.email-icon {
+    position: absolute;
+    display: inline-block;
+    outline: none; /* outline é o contorno */
+    border: 2px solid wheat;
+    padding: 10px 30px;
+    border-radius: 30px;
+    background-color: black;
+    box-shadow: 0px 0px 5px black, 0px 0px 20px wheat;
+    top: 4px;
+    right: 6px;
+    transition: .4s;
+    
+}
+
+.email-icon:hover {
+    cursor: pointer;
+    background-color: red;
+}
+
+.email-icon img {
+    filter: invert(100%); /* inverter a cor da imagem, no caso aqui era preto e virou branco */
+    
+    
+    
+}
+
+/* Sobre Mim */ 
+
+.sobremim {
+    width: 100%;
+    padding: 100px 0px;
+    background-color: black;
+}
+
+.sobremim img {
+    width: 430px;
+    height: auto;
+}
+
+.texto-sobremim {
+width: 550px;
+}
+
+.principal {
+    width: 1130px;
+    max-width: 95%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.texto-sobremim h2{
+    color: wheat;
+    font-size: 75px;
+    font-family: Portago;
+    font-weight: 500;
+    margin-bottom: 20px;
+
+}
+
+.texto-sobremim h5 {
+    color: wheat;
+    letter-spacing: 0.7px;
+    font-size: 22px;
+    font-family: Portago;
+    font-weight: 500;
+    margin-bottom: 25px;
+
+
+}
+
+.texto-sobremim p{
+    color: brown;
+    line-height: 24px; /* espaçamento de linhas */
+    font-size: 18px;
+    margin-bottom: 45px;
+} 
