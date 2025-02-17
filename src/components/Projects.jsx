@@ -1,15 +1,10 @@
+import "../styles/components/projects.sass";
+
 const Projects = () => {
   return (
-    <section className="projects">
+    <section id="projects">
       <h2 style={{ fontFamily: "Exo, sans-serif" }}>Projetos</h2>
-      <ul
-        style={{
-          fontFamily: "Exo, sans-serif",
-          color: "white",
-          marginLeft: 30,
-          marginBottom: 15,
-        }}
-      >
+      <ul>
         <li>
           Racing App: Controle de Corredores em Corridas de Rua - em andamento
         </li>
