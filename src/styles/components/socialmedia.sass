@@ -1,0 +1,39 @@
+@use '../variables'
+@use '../mixins'
+
+#social-media
+    @include mixins.center
+    gap: 1rem
+    margin: 1rem 0
+
+    .social-btn
+        padding: .6rem
+        background-color: variables.$bg-color-secondary
+        border-radius: variables.$card-border-radius
+        color: #FFD100
+        font-size: 1.3rem
+        @include mixins.center
+
+    // Defina as cores das redes sociais usando as variáveis
+    #LinkedIn
+        color: variables.$linkedin-color
+        transition: color 0.1s // Transição de cor suave
+
+    #GitHub
+        color: variables.$github-color
+        transition: color 0.1s
+
+    #Twitter
+        color: variables.$twitter-color
+        transition: color 0.1s
+
+    #Instagram
+        color: variables.$instagram-color
+        transition: color 0.1s
+
+    // Aplicar transição de cor no hover
+    #LinkedIn:hover,
+    #GitHub:hover,
+    #Twitter:hover,
+    #Instagram:hover
+        color: variables.$yellow-color // Amarelo quando o mouse passa por cima
