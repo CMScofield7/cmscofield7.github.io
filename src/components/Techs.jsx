@@ -12,7 +12,7 @@ import {
 import {
   SiTypescript,
   SiNestjs,
-  SiSequelize,
+  // SiSequelize,
   SiMongoose,
   SiDocker,
 } from "react-icons/si";
@@ -45,7 +45,6 @@ const Techs = () => {
             {tech.icon}
             <div className="tech-info">
               <h3 style={{ fontFamily: "Exo, sans-serif" }}>{tech.name}</h3>
-              <p>Lorem ipsum dolor sit amet.</p>
             </div>
           </div>
         ))}
